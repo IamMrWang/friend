@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!-- 指定文档编码格式为utf-8 -->
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<!-- 这meta的作用就是删除默认的苹果工具栏和菜单栏。content有两个值”yes”和”no”,当我们需要显示工具栏和菜单栏时，这个行meta就不用加了，默认就是显示。 -->
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    <meta name="format-detection" content="telephone=no">
+		<script type="text/javascript">
+	        if (/Android (\d+\.\d+)/.test(navigator.userAgent)) {
+	            var version = parseFloat(RegExp.$1);
+	            if (version > 2.3) {
+	                var phoneScale = parseInt(window.screen.width) / 640;
+	                document.write('<meta name="viewport" content="width=640, minimum-scale = ' + phoneScale + ', maximum-scale = ' + phoneScale + ', target-densitydpi=device-dpi">');
+	            } else {
+	                document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+	            }
+	        } else {
+	            document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+	        }
+		</script>
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animated.css"/>
+		<link rel="stylesheet" type="text/css" href="css/layout.css"/>
+		<script src="js/jquery-1.11.2.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="container">
+			<audio src="static/bg3.mp3" autoplay loop preload="auto" id="bgMusic" style="display: none">				
+			</audio>
+		    <div class="btn_open_music">
+		    </div>
+			<div class="loading">
+				<div class="car">
+				</div>
+				<span class="loading_nums"></span>
+				<span id="percentage">					
+				</span>
+			</div>
+			<div class="page_zero">
+				<div class="penetrate">
+				</div>
+				<div class="truth">
+				</div>
+				<div class="page_text">	
+				</div>
+				<div class="page_oneCar">		
+				</div>
+				<div class="page_oneBtn">					
+				</div>
+			</div>
+			<div class="page_one none">
+				<div class="puzzle_one">	
+				</div>
+				<div class="puzzle_two none">	
+				</div>
+				<div class="words">
+					<div class="word_one wordsText"></div>
+					<div class="word_two wordsText"></div>
+				</div>
+				<div class="options">
+				</div>
+				<ul class="option_btns">
+					<li class="option_1"></li>
+					<li class="option_2"></li>
+					<li class="option_3"></li>
+					<li class="option_4"></li>
+					<li class="option_5"></li>
+					<li class="option_6"></li>
+					<li class="option_7"></li>
+					<li class="option_8"></li>
+				</ul>
+				<div class="success">
+					<div class="effect_s"></div>
+					<div class="capacity_s"></div>
+					<div class="text_s">
+						桃花运加持,
+						<br/>这就把纯洁的拼车友谊
+						<br/>升华一下~
+					</div>
+				</div>
+				<div class="defeat">		
+					<div class="effect_d"></div>
+					<div class="capacity_d"></div>
+					<div class="text_d">
+						单身怪我咯?
+						<br/>
+						不拼哪来的爱情!
+					</div>
+				</div>
+			</div>
+			<div class="page_two none">
+				<div class="puzzle_one">	
+					</div>
+					<div class="puzzle_two none">	
+					</div>
+					<div class="words">
+						<div class="word_one wordsText"></div>
+						<div class="word_two wordsText"></div>
+						<div class="word_three wordsText"></div>
+					</div>
+					<div class="options">
+					</div>
+					<ul class="option_btns">
+						<li class="option_1"></li>
+						<li class="option_2"></li>
+						<li class="option_3"></li>
+						<li class="option_4"></li>
+						<li class="option_5"></li>
+						<li class="option_6"></li>
+						<li class="option_7"></li>
+						<li class="option_8"></li>
+					</ul>
+					<div class="success">
+						<div class="effect_s"></div>
+						<div class="capacity_s"></div>
+						<div class="text_s">
+							2016年必须知道的<br>
+							七大定律之一:<br>
+							拼车一口价,车费不变定律
+						</div>
+					</div>
+					<div class="defeat">		
+						<div class="effect_d"></div>
+						<div class="capacity_d"></div>
+						<div class="text_d">
+							这都不造哎,<br>注定一辈子吃土!
+						</div>
+					</div>
+				</div>
+			<div class="page_three none">
+				<div class="puzzle_one">	
+					</div>
+					<div class="puzzle_two none">	
+					</div>
+					<div class="words">
+						<div class="word_one wordsText"></div>
+						<div class="word_two wordsText"></div>
+						<div class="word_three wordsText"></div>
+					</div>
+					<div class="options">
+					</div>
+					<ul class="option_btns">
+						<li class="option_1"></li>
+						<li class="option_2"></li>
+						<li class="option_3"></li>
+						<li class="option_4"></li>
+						<li class="option_5"></li>
+						<li class="option_6"></li>
+						<li class="option_7"></li>
+						<li class="option_8"></li>
+					</ul>
+					<div class="success">
+						<div class="effect_s"></div>
+						<div class="capacity_s"></div>
+						<div class="text_s">
+							你们要的虐狗套餐,
+							<br>拼车相当于<br>两人同行一人免单!
+								<br>上限两人哦~
+						</div>
+					</div>
+					<div class="defeat">		
+						<div class="effect_d"></div>
+						<div class="capacity_d"></div>
+						<div class="text_d">
+							除了基友,<br>你木有盆友了咩?
+						</div>
+					</div>
+				</div>				
+			<div class="page_four none">
+				<div class="puzzle_one">	
+					</div>
+					<div class="puzzle_two none">	
+					</div>
+					<div class="words">
+						<div class="word_one wordsText"></div>
+						<div class="word_two wordsText"></div>
+						<div class="word_three wordsText"></div>
+						<div class="word_four wordsText"></div>
+					</div>
+					<div class="options">
+					</div>
+					<ul class="option_btns">
+						<li class="option_1"></li>
+						<li class="option_2"></li>
+						<li class="option_3"></li>
+						<li class="option_4"></li>
+						<li class="option_5"></li>
+						<li class="option_6"></li>
+						<li class="option_7"></li>
+						<li class="option_8"></li>
+					</ul>
+					<div class="success">
+						<div class="effect_s"></div>
+						<div class="capacity_s"></div>
+						<div class="text_s">
+							老板发的红包太小,
+							<br>买不起汉堡......<br>
+							快车我还坐得起哒~
+						</div>
+					</div>
+					<div class="defeat">		
+						<div class="effect_d"></div>
+						<div class="capacity_d"></div>
+						<div class="text_d">
+							歪!脚气很重么朋友!
+						</div>
+					</div>
+				</div>					
+			
+			<div class="page_five none">
+				<div class="puzzle_one">	
+					</div>
+					<div class="puzzle_two none">	
+					</div>
+					<div class="words">
+						<div class="word_one wordsText"></div>
+						<div class="word_two wordsText"></div>
+						<div class="word_three wordsText"></div>
+						<div class="word_four wordsText"></div>
+					</div>
+					<div class="options">
+					</div>
+					<ul class="option_btns">
+						<li class="option_1"></li>
+						<li class="option_2"></li>
+						<li class="option_3"></li>
+						<li class="option_4"></li>
+						<li class="option_5"></li>
+						<li class="option_6"></li>
+						<li class="option_7"></li>
+						<li class="option_8"></li>
+					</ul>
+					<div class="success">
+						<div class="effect_s"></div>
+						<div class="capacity_s"></div>
+						<div class="text_s">
+							新年出门不怕堵,
+							<br>这有一百种捷径让所有路线
+								<br>都顺理成章!
+						</div>
+					</div>
+					<div class="defeat">		
+						<div class="effect_d"></div>
+						<div class="capacity_d"></div>
+						<div class="text_d">
+							想象力已突破天际,<br>还是甩不掉路痴的命
+						</div>
+					</div>
+				</div>					
+			</div>
+			<div class="res_one none">
+				<div class="share"></div>
+				<div class="message"></div>
+				<div class="weep"></div>
+				<div class="btn_one"></div>
+				<div class="btn_two"></div>
+			</div>
+			<div class="res_two none">
+				<div class="share"></div>
+				<div class="message"></div>
+				<div class="heng"></div>
+				<div class="btn_one"></div>
+				<div class="btn_two"></div>
+			</div>
+			<div class="res_three none">
+				<div class="share"></div>
+				<div class="eyes_one"></div>
+				<div class="eyes_two"></div>
+				<div class="btn_one"></div>
+				<div class="sharef"></div>
+			</div>
+			<div class="sharefriends" hidden="hidden">
+				<div class="showpic"></div>
+			</div>			
+	</body>
+	<script src="js/index2.js " type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+//		$(window).bind('resize load', function(){
+//			$("body").css("zoom", $(window).width() / 640);
+//			$("body").css({
+//				'display': 'block',
+//			});
+//			
+//	});
+		</script>
+</html>

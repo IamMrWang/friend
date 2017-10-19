@@ -1,0 +1,109 @@
+@-webkit-keyframes penetrate{
+	from{
+		opacity: 0;
+		top: 40px;
+	}
+	to{
+		opacity: 1;
+		top: 76px;
+	}
+}
+@-webkit-keyframes truth{
+	0%{
+		opacity: 1;
+		transform:scale(1.4) rotate(-30deg);
+	}
+	80%{
+		opacity: 1;
+		transform:scale(0.9) rotate(0deg);
+	}
+	100%{
+		opacity: 1;
+		transform:scale(1) rotate(0deg);
+	}
+}
+@-webkit-keyframes page_text{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+@-webkit-keyframes page_oneBtn{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+@-webkit-keyframes effect{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@-webkit-keyframes effect_d{
+	0%{
+		transform: translate3d(0,0,0)
+	}
+	100% {
+		transform: translate3d(300px,300px,0)
+	}
+}
+@-webkit-keyframes share {
+	0%{
+		width: 75px;
+		height: 71px;
+	}
+	50%{
+		width: 92px;
+		height: 90px;
+	}
+	100%{
+		width: 75px;
+		height: 71px;
+	}
+}
+@-webkit-keyframes weep {
+	0%{
+		height: 102px;
+	}
+	50%{
+		height: 119px;
+	}
+	100%{
+		height: 102px;
+	}
+}
+@-webkit-keyframes heng {
+	0%{
+		opacity: 1;
+		 left: 315px;
+   		 top: 264px;
+   		 transform: scale(0.3);
+	}
+	100%{
+		opacity: 0;
+		 left: 193px;
+    		 top: 261px;
+   		 transform: scale(1);
+	}
+}
+@-webkit-keyframes eyes {
+	0%{
+		transform: translate3d(0px, 0 ,0);
+	}
+	50%{
+		transform: translate3d(10px, 0 ,0);
+	}
+	100% {
+		transform: translate3d(0px ,0,0);
+	}
+}
